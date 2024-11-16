@@ -1,6 +1,13 @@
 package com.scaler.productservice.models;
 
-public class Category {
-    private Long id;
+import jakarta.persistence.Entity;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@Entity
+public class Category extends BaseModel{
+
     private String name;
 }
