@@ -3,18 +3,16 @@ package com.scaler.productservice.services;
 import com.scaler.productservice.dtos.FakeStoreCreateProductDto;
 import com.scaler.productservice.dtos.FakeStoreProductDto;
 import com.scaler.productservice.exceptions.ProductNotFoundException;
-import com.scaler.productservice.models.Category;
 import com.scaler.productservice.models.Product;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Service
+@Service("FakeStoreProductService")
 public class FakeStoreProductService implements ProductService {
 
     private RestTemplate restTemplate;
