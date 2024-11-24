@@ -11,5 +11,4 @@ public class CreateProductRequestDto {
     private String image;
     private double price;
     private String category;
-
 }

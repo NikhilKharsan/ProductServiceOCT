@@ -16,15 +16,17 @@ public class FakeStoreProductDto {
     private String image;
 
     public Product toProduct() {
-        Product product=new Product();
+        Product product = new Product();
         product.setId(getId());
         product.setTitle(getTitle());
-        product.setPrice(Double.parseDouble(getPrice()));
-        Category category=new Category();
-        category.setName(getCategory());
-        product.setCategory(category);
         product.setDescription(getDescription());
+        product.setPrice(Double.parseDouble(getPrice()));
         product.setImageUrl(getImage());
+
+        Category category = new Category();
+        category.setName(getCategory());
+
+        product.setCategory(category);
 
         return product;
     }
